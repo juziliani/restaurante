@@ -52,9 +52,9 @@ include('../includes/conexao.php');
                     <td><?php echo $dados['nome']?></td>
                     <td><?php echo $dados['categoria']?></td>
                     <td><?php echo $dados['descricao']?></td>
-                    <td><?php echo $dados['preco']?></td>
+                    <td><?php echo "R$" .$dados['preco']?></td>
                     <td><?php echo $dados['caloria']?></td>
-                    <td><?php echo $dados['destaque']?></td>    
+                    <td><?php if($dados['destaque'] == 1){echo "sim";}else{echo "Não";}?></td>    
                     <td><a href="editar_pratos.php?idprato=<?php echo $id?>">Editar</button></a></td>
                     <td><a href="deletar_pratos.php?idprato=<?php echo $id?>">Deletar</button></a></td>
                   <?php }?>

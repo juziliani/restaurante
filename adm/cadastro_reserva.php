@@ -29,65 +29,48 @@
     <body>
 
         <main class="container">
-            <h1>Insira as informações do prato</h1>
+            <h1>Insira as informações para reserva</h1>
             <br>
-            <form class="form-horizontal" action="cadastrar-pratos.php" method="POST" role="form" data-toggle="">
+            <form class="form-horizontal" action="cadastrar-reserva.php" method="POST" role="form" data-toggle="">
                 <div class="form-group">
-                    <label class="control-label col-sm-3">Nome do Prato:</label>
+                    <label class="control-label col-sm-3">Nome:</label>
                     <div class="col-sm-9">
                         <input type="text" class="form-control" name="nome" id="nome" placeholder="" >
                         <div class="help-block with-errors"></div>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="control-label col-sm-3">Codigo:</label>
+                    <label class="control-label col-sm-3">Telefone:</label>
                     <div class="col-sm-9">
-                        <input type="text" class="form-control" name="codigo" id="codigo" placeholder="" >
+                        <input type="text" class="form-control" name="telefone" id="telefone" placeholder="" >
                         <div class="help-block with-errors"></div>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="control-label col-sm-3">Preço:</label>
+                    <label class="control-label col-sm-3">Email:</label>
                     <div class="col-sm-9">
-                        <input type="number" class="form-control" name="preco" id="preco" placeholder="R$" required>
+                        <input type="number" class="form-control" name="email" id="email" placeholder="" required>
                         <div class="help-block with-errors"></div>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="control-label col-sm-3">Categoria:</label>
+                    <label class="control-label col-sm-3">Mensagem:</label>
                     <div class="col-sm-9">
-                        <select class="form-control" name="categoria" required id="categoria">
-                            <option value="" selected="selected" disabled="disabled"> -- Escolha uma opção --</option>
-                            <option value="entrada">Entrada</option>
-                            <option value="prato-principal">Prato Principal</option>
-                            <option value="sobremesas">Sobremesa</option>
-                        </select>
+                        <textarea type ="" class="form-control" name="mensagem" id="mensagem" placeholder= "mensagem" required></textarea>
+                        <div class= "help block with-errors"></div>
+                    </div>    
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-3">Data Reserva:</label>
+                    <div class="col-sm-9">
+                        <input type="datetime-local" class="form-control" name="data" id="data" placeholder="Selecione a data da rerserva" required>
                         <div class="help-block with-errors"></div>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="control-label col-sm-3">Descrição:</label>
+                    <label class="control-label col-sm-3">Número pessoas:</label>
                     <div class="col-sm-9">
-                        <textarea class="form-control" id="exampleTextarea" rows="6" 
-                                  id="descricao" name="descricao" placeholder="Descrição" required></textarea>
-                        <div class="help-block with-errors"></div>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label class="control-label col-sm-3">Caloria:</label>
-                    <div class="col-sm-9">
-                        <input type="number" class="form-control" name="calorias" id="calorias" placeholder="100" required>
-                        <div class="help-block with-errors"></div>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label class="control-label col-sm-3">Destaque:</label>
-                    <div class="col-sm-9">
-                        <select class="form-control" name="destaque" required id="destaque">
-                            <option value="" selected="selected" disabled="disabled">Deseja incluir esse produto nos destaques?</option>
-                            <option value="0">Não</option>
-                            <option value="1">Sim</option>
-                        </select>
+                        <select class="form-control" name="npessoas" required id="npessoas" placeholder ="">
                         <div class="help-block with-errors"></div>
                     </div>
                 </div>

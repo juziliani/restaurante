@@ -41,5 +41,7 @@ if($conexao ->query($sql)){
 }
 $conexao ->close();
 
+header('location: listar_pratos.php');
+
 
 ?>
